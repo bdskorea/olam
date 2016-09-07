@@ -1,0 +1,25 @@
+[template] Basic Proprietary Commercial License,Apache License 2.0,"BSD 2-clause ""Simplified"" License","BSD 3-clause ""New"" or ""Revised"" License",GNU Affero General Public License v3.0,GNU General Public License v2.0 or later,MIT License,Public Domain,SIL Open Font License 1.1,Unspecified,MIT License
+X,X,X,X,X,X,X,X,X,X,X
+O,O,X,X,X,X,X,X,O,X,X
+X,△,△,△,O,O,△,△,△,△,△
+X,△,△,△,O,O,△,△,△,△,△
+X,△,△,△,O,O,△,△,△,△,△
+X,△,△,△,O,O,△,△,△,△,△
+X,△,X,X,O,O,X,X,△,X,X
+X,△,△,△,O,O,△,△,O,△,△
+X,O,X,X,O,X,X,X,X,X,X
+△,O,△,△,O,△,△,△,△,△,△
+△,△,△,△,O,△,△,△,△,△,△
+X,X,X,X,O,O,X,X,X,X,X
+X,O,X,X,O,O,X,X,X,X,X
+X,X,X,X,O,X,X,X,X,X,X
+O,O,O,X,X,O,O,X,X,X,O
+O,O,O,X,X,O,O,X,X,X,O
+X,O,X,X,X,X,X,X,X,X,X
+X,O,O,O,O,O,O,X,O,X,O
+X,O,X,O,X,X,X,X,O,X,X
+X,X,X,X,O,O,X,X,X,X,X
+"파일
+(per MPL)",X,X,X,"코드 기반의 산출물
+(per GPL)","코드 기반의 산출물
+(per GPL)",X,X,X,X,X

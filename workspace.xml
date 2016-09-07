@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project olam with libraries in sub-folder">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <!--define folder properties-->
+    <property name="dir.buildfile" value="."/>
+    <property name="dir.workspace" value="C:/Junsu/eclipse_mars/workspace"/>
+    <property name="dir.jarfile" value="C:/Junsu/DevRelease/olam-0.4"/>
+    <target name="create_run_jar">
+        <jar destfile="${dir.jarfile}/olam-0.4.jar">
+            <manifest>
+                <attribute name="Main-Class" value="kr.co.blackducksoftware.olam.Main"/>
+                <attribute name="Class-Path" value=". olam-0.4_lib/args4j-2.0.28.jar olam-0.4_lib/blackduck-cxf-utilities-1.1.jar olam-0.4_lib/commons-collections-3.2.1.jar olam-0.4_lib/commons-lang-2.6.jar olam-0.4_lib/commons-logging-1.1.1.jar olam-0.4_lib/cxf-2.7.6.jar olam-0.4_lib/cxf-xjc-boolean-2.6.2.jar olam-0.4_lib/cxf-xjc-bug671-2.6.2.jar olam-0.4_lib/cxf-xjc-dv-2.6.2.jar olam-0.4_lib/cxf-xjc-ts-2.6.2.jar olam-0.4_lib/geronimo-activation_1.1_spec-1.0.2.jar olam-0.4_lib/jaxb-api-2.2.3.jar olam-0.4_lib/jaxb-impl-2.2.4-1.jar olam-0.4_lib/jaxb-xjc-2.2.4-1.jar olam-0.4_lib/jetty-util-8.1.7.v20120910.jar olam-0.4_lib/mail-1.4.jar olam-0.4_lib/neethi-3.0.2.jar olam-0.4_lib/opensaml-2.5.1-1.jar olam-0.4_lib/protex-sdk-client-7.1.jar olam-0.4_lib/protex-sdk-utilities-7.1.jar olam-0.4_lib/saaj-api-1.3.4.jar olam-0.4_lib/saaj-impl-1.3.12.jar olam-0.4_lib/stax2-api-3.1.1.jar olam-0.4_lib/super-csv-2.3.1.jar olam-0.4_lib/velocity-1.6.4.jar olam-0.4_lib/woodstox-core-asl-4.2.0.jar olam-0.4_lib/wsdl4j-1.6.2.jar olam-0.4_lib/wss4j-1.6.12.jar olam-0.4_lib/xml-resolver-1.2.jar olam-0.4_lib/xmlschema-core-2.0.3.jar olam-0.4_lib/xmlsec-1.5.6.jar"/>
+            </manifest>
+            <fileset dir="${dir.workspace}/OLAM/bin"/>
+        </jar>
+        <delete dir="${dir.jarfile}/olam-0.4_lib"/>
+        <mkdir dir="${dir.jarfile}/olam-0.4_lib"/>
+        <copy file="${dir.workspace}/OLAM/lib/args4j-2.0.28.jar" todir="${dir.jarfile}/olam-0.4_lib"/>
+        <copy file="${dir.workspace}/OLAM/lib/blackduck-cxf-utilities-1.1.jar" todir="${dir.jarfile}/olam-0.4_lib"/>
+        <copy file="${dir.workspace}/OLAM/lib/commons-collections-3.2.1.jar" todir="${dir.jarfile}/olam-0.4_lib"/>
+        <copy file="${dir.workspace}/OLAM/lib/commons-lang-2.6.jar" todir="${dir.jarfile}/olam-0.4_lib"/>
+        <copy file="${dir.workspace}/OLAM/lib/commons-logging-1.1.1.jar" todir="${dir.jarfile}/olam-0.4_lib"/>
+        <copy file="${dir.workspace}/OLAM/lib/cxf-2.7.6.jar" todir="${dir.jarfile}/olam-0.4_lib"/>
+        <copy file="${dir.workspace}/OLAM/lib/cxf-xjc-boolean-2.6.2.jar" todir="${dir.jarfile}/olam-0.4_lib"/>
+        <copy file="${dir.workspace}/OLAM/lib/cxf-xjc-bug671-2.6.2.jar" todir="${dir.jarfile}/olam-0.4_lib"/>
+        <copy file="${dir.workspace}/OLAM/lib/cxf-xjc-dv-2.6.2.jar" todir="${dir.jarfile}/olam-0.4_lib"/>
+        <copy file="${dir.workspace}/OLAM/lib/cxf-xjc-ts-2.6.2.jar" todir="${dir.jarfile}/olam-0.4_lib"/>
+        <copy file="${dir.workspace}/OLAM/lib/geronimo-activation_1.1_spec-1.0.2.jar" todir="${dir.jarfile}/olam-0.4_lib"/>
+        <copy file="${dir.workspace}/OLAM/lib/jaxb-api-2.2.3.jar" todir="${dir.jarfile}/olam-0.4_lib"/>
+        <copy file="${dir.workspace}/OLAM/lib/jaxb-impl-2.2.4-1.jar" todir="${dir.jarfile}/olam-0.4_lib"/>
+        <copy file="${dir.workspace}/OLAM/lib/jaxb-xjc-2.2.4-1.jar" todir="${dir.jarfile}/olam-0.4_lib"/>
+        <copy file="${dir.workspace}/OLAM/lib/jetty-util-8.1.7.v20120910.jar" todir="${dir.jarfile}/olam-0.4_lib"/>
+        <copy file="${dir.workspace}/OLAM/lib/mail-1.4.jar" todir="${dir.jarfile}/olam-0.4_lib"/>
+        <copy file="${dir.workspace}/OLAM/lib/neethi-3.0.2.jar" todir="${dir.jarfile}/olam-0.4_lib"/>
+        <copy file="${dir.workspace}/OLAM/lib/opensaml-2.5.1-1.jar" todir="${dir.jarfile}/olam-0.4_lib"/>
+        <copy file="${dir.workspace}/OLAM/lib/protex-sdk-client-7.1.jar" todir="${dir.jarfile}/olam-0.4_lib"/>
+        <copy file="${dir.workspace}/OLAM/lib/protex-sdk-utilities-7.1.jar" todir="${dir.jarfile}/olam-0.4_lib"/>
+        <copy file="${dir.workspace}/OLAM/lib/saaj-api-1.3.4.jar" todir="${dir.jarfile}/olam-0.4_lib"/>
+        <copy file="${dir.workspace}/OLAM/lib/saaj-impl-1.3.12.jar" todir="${dir.jarfile}/olam-0.4_lib"/>
+        <copy file="${dir.workspace}/OLAM/lib/stax2-api-3.1.1.jar" todir="${dir.jarfile}/olam-0.4_lib"/>
+        <copy file="${dir.workspace}/OLAM/lib/super-csv-2.3.1.jar" todir="${dir.jarfile}/olam-0.4_lib"/>
+        <copy file="${dir.workspace}/OLAM/lib/velocity-1.6.4.jar" todir="${dir.jarfile}/olam-0.4_lib"/>
+        <copy file="${dir.workspace}/OLAM/lib/woodstox-core-asl-4.2.0.jar" todir="${dir.jarfile}/olam-0.4_lib"/>
+        <copy file="${dir.workspace}/OLAM/lib/wsdl4j-1.6.2.jar" todir="${dir.jarfile}/olam-0.4_lib"/>
+        <copy file="${dir.workspace}/OLAM/lib/wss4j-1.6.12.jar" todir="${dir.jarfile}/olam-0.4_lib"/>
+        <copy file="${dir.workspace}/OLAM/lib/xml-resolver-1.2.jar" todir="${dir.jarfile}/olam-0.4_lib"/>
+        <copy file="${dir.workspace}/OLAM/lib/xmlschema-core-2.0.3.jar" todir="${dir.jarfile}/olam-0.4_lib"/>
+        <copy file="${dir.workspace}/OLAM/lib/xmlsec-1.5.6.jar" todir="${dir.jarfile}/olam-0.4_lib"/>
+    </target>
+</project>
